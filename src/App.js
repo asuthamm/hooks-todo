@@ -1,23 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import TodoForm from './components/TodoForm'
-import Todo from './components/Todo'
-
-// function Todo({ todo, index, completeTodo, removeTodo }) {
-//   return (
-//     <div
-//       className="todo"
-//       style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
-//     >
-//       {todo.text}
-
-//       <div>
-//         <button onClick={() => completeTodo(index)}>Complete</button>
-//         <button onClick={() => removeTodo(index)}>x</button>
-//       </div>
-//     </div>
-//   );
-// }
+import Todo     from './components/Todo'
 
 function App() {
   const [todos, setTodos] = useState([
@@ -36,7 +20,8 @@ function App() {
   ]);
 
   const addTodo = text => {
-    const newTodos = [...todos, { text }];
+    let newTodo = {text, isCompleted: false}
+    const newTodos = [...todos,  newTodo ];
     setTodos(newTodos);
   };
 
@@ -52,6 +37,7 @@ function App() {
     setTodos(newTodos);
   };
 
+  console.log(todos)
   return (
     <div className="app">
       <div className="todo-list">

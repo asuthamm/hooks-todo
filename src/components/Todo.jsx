@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react';
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
+  // console.log(todo)
   return (
     <div
       className="todo"
