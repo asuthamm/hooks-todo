@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import TodoForm from './components/TodoForm'
 import Todo     from './components/Todo'
+import Counter     from './components/Counter'
 
 function App() {
   const [todos, setTodos] = useState([
@@ -37,7 +38,7 @@ function App() {
     setTodos(newTodos);
   };
 
-  console.log(todos)
+  // console.log(todos)
   return (
     <div className="app">
       <div className="todo-list">
@@ -49,8 +50,13 @@ function App() {
             completeTodo={completeTodo}
             removeTodo={removeTodo}
           />
+        
         ))}
         <TodoForm addTodo={addTodo} />
+        <Counter 
+          todos={todos}
+        />
+
       </div>
     </div>
   );
