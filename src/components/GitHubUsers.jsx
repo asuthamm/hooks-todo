@@ -22,6 +22,4 @@ function GitHubUsers() {
     </div>
   );
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<GitHubUsers />, rootElement);
+export default GitHubUsers;
