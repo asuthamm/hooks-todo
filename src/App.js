@@ -5,6 +5,7 @@ import Todo        from './components/Todo'
 import Counter     from './components/Counter'
 import GitHubUsers from './components/GitHubUsers'
 import CounterReducer  from './components/CounterReducer'
+import ButtonClick from './components/ButtonClick'
 
 function App() {
   const [todos, setTodos] = useState([
@@ -60,7 +61,8 @@ function App() {
         />  */}
         {/* <GitHubUsers /> */}
       
-        <CounterReducer />
+        {/* <CounterReducer /> */}
+        <ButtonClick />
       </div>
     </div>
   );
