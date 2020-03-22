@@ -13,12 +13,12 @@ function GitHubUsers() {
   }, []); // empty array because we only run once
 
   return (
-    <div className="section">
-      {users.map(user => (
-        <div key={user.id} className="card">
-          <h5>{user.login}</h5>
-        </div>
-      ))}
+    <div>
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>{user.login}</li>
+        ))}
+      </ul>
     </div>
   );
 }
