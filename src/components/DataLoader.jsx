@@ -1,8 +1,9 @@
 import React from "react";
 import useFetch from "../useFetch";
-// console.log('dataloader')
-export default function DataLoader(props) {
+
+export default function DataLoader() {
   const users = useFetch("https://api.github.com/users");
+
   return (
     <div>
       <ul>

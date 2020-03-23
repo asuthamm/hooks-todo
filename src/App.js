@@ -60,11 +60,11 @@ function App() {
         {/* <Counter 
           todos={todos}
         />  */}
-        <GitHubUsers />
+        {/* <GitHubUsers /> */}
       
         {/* <CounterReducer /> */}
         {/* <ButtonClick /> */}
-        {/* <DataLoader /> */}
+        <DataLoader />
       </div>
     </div>
   );
