@@ -7,7 +7,8 @@ import Todo        from './components/Todo'
 // import CounterReducer  from './components/CounterReducer'
 // import ButtonClick from './components/ButtonClick'
 // import DataLoader  from './components/DataLoader'
-import ParentComponent        from './components/ParentComponent'
+// import ParentComponent    from './components/ParentComponent'
+import ParentContext      from './components/ParentContext'
 
 function App() {
   const [todos, setTodos] = useState([
@@ -66,7 +67,8 @@ function App() {
         {/* <CounterReducer /> */}
         {/* <ButtonClick /> */}
         {/* <DataLoader /> */}
-        <ParentComponent />
+        {/* <ParentComponent /> */}
+        <ParentContext />
       </div>
     </div>
   );
