@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 import TodoForm    from './components/TodoForm'
 import Todo        from './components/Todo'
-import Counter     from './components/Counter'
-import GitHubUsers from './components/GitHubUsers'
-import CounterReducer  from './components/CounterReducer'
-import ButtonClick from './components/ButtonClick'
-import DataLoader  from './components/DataLoader'
+// import Counter     from './components/Counter'
+// import GitHubUsers from './components/GitHubUsers'
+// import CounterReducer  from './components/CounterReducer'
+// import ButtonClick from './components/ButtonClick'
+// import DataLoader  from './components/DataLoader'
+import ParentComponent        from './components/ParentComponent'
 
 function App() {
   const [todos, setTodos] = useState([
@@ -64,7 +65,8 @@ function App() {
       
         {/* <CounterReducer /> */}
         {/* <ButtonClick /> */}
-        <DataLoader />
+        {/* <DataLoader /> */}
+        <ParentComponent />
       </div>
     </div>
   );

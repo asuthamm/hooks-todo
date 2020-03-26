@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-// function Todo({ todo, index, completeTodo, removeTodo }) {
+      // function Todo({ todo, index, completeTodo, removeTodo }) {
   function Todo( props ) {
   let { todo, index, completeTodo, removeTodo } = props
   // console.log(props)
