@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext, ChannelContext } from './ParentContext'
+
 
 function ComponentE() {
+  const user = useContext(UserContext)
+  const channel = useContext(ChannelContext)
+
   return (
     <div>
-      componentE
+      User is {user} and channel is {channel}
     </div>
   )
 }

@@ -8,7 +8,8 @@ import Todo        from './components/Todo'
 // import ButtonClick from './components/ButtonClick'
 // import DataLoader  from './components/DataLoader'
 // import ParentComponent    from './components/ParentComponent'
-import ParentContext      from './components/ParentContext'
+// import ParentContext  from './components/ParentContext'
+import Message        from './components/Message'
 
 function App() {
   const [todos, setTodos] = useState([
@@ -68,7 +69,8 @@ function App() {
         {/* <ButtonClick /> */}
         {/* <DataLoader /> */}
         {/* <ParentComponent /> */}
-        <ParentContext />
+        {/* <ParentContext /> */}
+        <Message message={'Welcome'}/>
       </div>
     </div>
   );
