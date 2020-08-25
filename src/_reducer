@@ -1,0 +1,44 @@
+https://www.linkedin.com/pulse/writing-your-first-react-hooks-zac-haluza/
+// https://repl.it/@AlexS8/alexReactHook#src/App.js
+import React, {useState} from 'react';
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(prevCount => prevCount + 1 );
+  }
+
+  const decrement = () => {
+    setCount(prevCount => prevCount - 1);
+  }
+
+  const reset = () => {
+    setCount(0);
+  }
+
+  const ADD_TASK = 'ADD_TASK';
+  const REMOVE_TASK = 'REMOVE_TASK';
+
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case ADD_TASK:
+        return [...state, action.payload];
+      case REMOVE_TASK:
+        const { id } = action.payload;
+        return state.filter(task => task.id !== id);
+      default:
+        return state;
+    }
+  }
+  return (
+    <>
+      <h1>{count}</h1>
+      <button onClick={increment}>+1</button>
+      <button onClick={reset}>Reset</button>
+      <button onClick={decrement}>-1</button>
+    </>
+  )
+}
+
+export default App;
